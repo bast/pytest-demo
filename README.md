@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/bast/pytest-demo.svg?branch=master)](https://travis-ci.org/bast/pytest-demo/builds)
 [![Coverage Status](https://coveralls.io/repos/bast/pytest-demo/badge.png?branch=master)](https://coveralls.io/r/bast/pytest-demo?branch=master)
+[![License](https://img.shields.io/badge/license-%20BSD--3-blue.svg)](../master/LICENSE)
 
 
 pytest-demo
