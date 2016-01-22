@@ -10,15 +10,24 @@ python:
   - 3.5
 
 install:
+  - if [[ $TRAVIS_PYTHON_VERSION == 2.6 ]];
+    then pip install pytest-cov python-coveralls;
+    else pip install pytest;
+    fi
   - pip install pep8
-  - pip install pytest-cov
-  - pip install python-coveralls
 
 script:
   - pep8 example/example.py
   - pep8 example/test.py
-  - py.test -vv example/test.py --cov example
-  - coveralls
+  - if [[ $TRAVIS_PYTHON_VERSION == 2.6 ]];
+    then py.test -vv example/test.py --cov example;
+    else py.test -vv example/test.py;
+    fi
+
+after_success:
+  - if [[ $TRAVIS_PYTHON_VERSION == 2.6 ]];
+    then coveralls;
+    fi
 
 notifications:
   email: false
