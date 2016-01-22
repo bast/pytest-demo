@@ -1,10 +1,16 @@
-language: python
+language:
+  - python
+
 python:
   - 2.7
+
 install:
   - pip install pytest-cov
   - pip install python-coveralls
+
 script:
-  - py.test --cov example example/test.py
-after_success:
+  - py.test -vv example/test.py --cov example
   - coveralls
+
+notifications:
+  email: false
