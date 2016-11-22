@@ -3,8 +3,7 @@
 [![License](https://img.shields.io/badge/license-%20BSD--3-blue.svg)](../master/LICENSE)
 
 
-pytest-demo
-===========
+# pytest-demo
 
 Python unit test demo using [pytest](http://pytest.org) deployed to
 [Travis-CI](https://travis-ci.org/bast/pytest-demo/builds) with test coverage
