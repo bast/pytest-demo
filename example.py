@@ -10,15 +10,13 @@ def test_get_word_lengths():
     text = "Three tomatoes are walking down the street"
     assert get_word_lengths(text) == [5, 8, 3, 7, 4, 3, 6]
 
-# ------------------------------------------------------------------------------
-
 
 # example of a function which is never tested
 # see coverage analysis
 def pythagorean_triples(n):
     """
     Returns list of all unique pythagorean triples
-    (a, b, c) where a < b < c <= n.
+    (a, b, c) where a < b < c <= n and a*a + b*b == c*c.
     """
     l = []
     # loop over all a < b < c <= n
